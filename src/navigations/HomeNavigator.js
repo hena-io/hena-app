@@ -6,7 +6,7 @@ import SettingsScreen from '../screens/SettingsScreen';
 export default createBottomTabNavigator({
     Wallet: {
         screen: WalletScreen,
-        title: 'Wallet'
+        title: 'Wallet',
     },
     Settings: {
         screen: SettingsScreen,
