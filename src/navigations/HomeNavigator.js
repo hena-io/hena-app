@@ -1,15 +1,31 @@
+import React from 'react';
 import { createBottomTabNavigator } from 'react-navigation';
 
-import WalletScreen from '../screens/WalletScreen';
-import SettingsScreen from '../screens/SettingsScreen';
+import TabBarIcon from '../components/TabBarIcon';
+import WalletNavigator from './WalletNavigator';
+import SettingsNavigator from './SettingsNavigator';
 
-export default createBottomTabNavigator({
+const HomeNavigator = createBottomTabNavigator({
     Wallet: {
-        screen: WalletScreen,
+        screen: WalletNavigator,
         title: 'Wallet',
+        navigationOptions: () => ({
+            tabBarIcon: ({ tintColor }) => (
+                <TabBarIcon name={'ios-wallet'} color={tintColor}/>
+            )
+        })
     },
     Settings: {
-        screen: SettingsScreen,
-        title: 'Settings'
+        screen: SettingsNavigator,
+        title: 'Settings',
+        navigationOptions: () => ({
+            tabBarIcon: ({ tintColor }) => (
+                <TabBarIcon name={'ios-settings'} color={tintColor}/>
+            )
+        })
     }
+}, {
+    initialRouteName: 'Wallet',
 });
+
+export default HomeNavigator;

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 
-export default class SettingsScreen extends Component {
+export default class ReceiveTokenScreen extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text>Settings</Text>
+                <Text>Receive Token</Text>
             </View>
         );
     }
