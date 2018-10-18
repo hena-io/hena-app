@@ -5,9 +5,7 @@ import { Button } from 'react-native-elements';
 const TxsButton = ({ title, onPress }) => (
     <Button
         title={title}
-        containerViewStyle={{
-            flex: 1,
-        }}
+        containerViewStyle={{flex: 1}}
         buttonStyle={{
             borderRadius: 6
         }}
@@ -40,8 +38,14 @@ export default class TokenScreen extends Component {
                         </View>
                     </View>
                     <View style={{flex: 1, flexDirection: 'row'}}>
-                        <TxsButton title={'Send'} onPress={this._onSendToken} />
-                        <TxsButton title={'Receive'} onPress={this._onReceiveToken} />
+                        <TxsButton
+                            title={'Send'}
+                            onPress={this._onSendToken}
+                        />
+                        <TxsButton
+                            title={'Receive'}
+                            onPress={this._onReceiveToken}
+                        />
                     </View>
                 </View>
                 <View style={styles.transactions}>

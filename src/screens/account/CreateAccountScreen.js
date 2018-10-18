@@ -1,19 +1,11 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import { Button } from 'react-native-elements';
 
 export default class CreateAccountScreen extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Button
-                    buttonStyle={styles.button}
-                    title={'CREATE ACCOUNT'}
-                />
-                <Button
-                    buttonStyle={styles.button}
-                    title={'IMPORT ACCOUNT'}
-                />
+                <Text>Create Account</Text>
             </View>
         );
     }
@@ -24,9 +16,5 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center'
-    },
-    button: {
-        width: 200,
-        margin: 10
     }
 });
