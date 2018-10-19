@@ -5,14 +5,10 @@
  */
 
 import React, { Component } from 'react';
-import { StyleSheet, View, YellowBox, Text } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 import { Button } from 'react-native-elements';
 
 import MainNavigator from './src/navigations/MainNavigator';
-
-YellowBox.ignoreWarnings([
-  'Warning: isMounted(...) is deprecated in plain JavaScript React classes.'
-]);
 
 export default class App extends Component {
   render() {

@@ -4,7 +4,6 @@ import { Button } from 'react-native-elements';
 
 export default class AccountScreen extends Component {
     _onCreateAccount = () => {
-        console.log("!?!");
         this.props.navigation.navigate('Create');
     };
 
